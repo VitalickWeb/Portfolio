@@ -1,0 +1,12 @@
+
+.blockHeader {
+    height: 80px;
+    width: 100%;
+    background-color: #2B5377;
+}
+/*margin: 0 auto; берет все пустое пространство, делит его пополам и раскидывает на две части.*/
+
+.blockHeader .title {
+    color: snow;
+    margin: 0;
+}

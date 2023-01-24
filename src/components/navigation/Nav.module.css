@@ -1,18 +1,18 @@
 .blockNav {
     border: 1px solid;
-    width: 298px;
+    width: 338px;
+    display: inline-block;
 }
 
 .blockNav a {
     text-decoration: none;
-    padding-right: 7px;
+    padding: 0 9px 0 9px;
     color: snow;
     text-transform: uppercase;
     font-family: sans-serif;
     font-weight: 500;
     transition: 0.2s;
     box-sizing: border-box;
-    padding-left: 10px;
 }
 
 .blockNav a:hover {
@@ -22,13 +22,8 @@
     text-transform: uppercase;
     font-family: sans-serif;
     font-weight: 500;
-    background-color: #303F7D;
-    padding: 4px 7px 4px 7px;
+    background-color: #5DA252;
+    padding: 4px 9px 4px 9px;
     border-radius: 3px;
     transition: 0.2s;
-    padding: -1px;
 }
-
-/*.blockNav a:last-child {*/
-/*    margin: 0;*/
-/*}*/

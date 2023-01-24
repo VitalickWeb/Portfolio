@@ -1,0 +1,26 @@
+/*height: 100vh; это высота любого экрана*/
+.greetingsBlock {
+    width: 100%;
+    height: 100vh;
+    background-color: #5E87AC;
+}
+.greetings {
+    background-color: silver;
+}
+.greetings .itemHi {
+    font-size: 20px;
+}
+.greetings .itemName {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.greetings .itemPosition {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.image {
+    width: 220px;
+    height: 300px;
+    background-color: silver;
+}
