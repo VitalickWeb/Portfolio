@@ -1,5 +1,28 @@
-.blockSkills {
+.skillsBlockCommon {
     width: 100%;
     height: 100vh;
     background-color: #7D64B2;
+}
+.containerSkills {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid #333;
+    border-bottom: 0;
+}
+.blockTitle {
+    width: 100%;
+    height: 180px;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: center;
+}
+.containerSkills .itemTitle {
+    width: 140px;
+    height: 36px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
 }

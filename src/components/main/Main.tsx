@@ -12,7 +12,7 @@ export const Main = () => {
                     <p className={st.itemPosition}>I am a frontend developer</p>
                 </div>
                 <div className={st.image}>
-                    <img src="src/components/main/Main" alt=""/>
+                    <img src="src/components/main/Main" alt="photo"/>
                 </div>
             </div>
         </div>

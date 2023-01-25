@@ -7,8 +7,8 @@ import {Skills} from "./components/skills/Skills";
 function App() {
     return (
         <div className="App">
-            <Header/>
-            <Main/>
+            <Header />
+            <Main />
             <Skills />
         </div>
     );
