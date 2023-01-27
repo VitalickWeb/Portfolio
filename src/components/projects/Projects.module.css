@@ -1,9 +1,10 @@
-.skillsBlockCommon {
+.blockProjects {
     width: 100%;
     height: 100vh;
-    background-color: #7D64B2;
+    background-color: #5FB951;
 }
-.containerSkills {
+
+.containerProjects {
     width: 80%;
     height: 100%;
     margin: 0 auto;
@@ -18,7 +19,7 @@
     display: flex;
     justify-content: center;
 }
-.containerSkills .itemTitle {
+.blockProjects .itemTitle {
     padding: 0 10px 0 10px;
     height: 36px;
     margin-top: 0;

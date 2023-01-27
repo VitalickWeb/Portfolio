@@ -1,0 +1,41 @@
+.commonBlockHiring {
+    width: 100%;
+    height: 40vh;
+    background-color: #DFAB62;
+}
+
+.containerHiring {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid #333;
+    border-top: 0;
+    border-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+.blockTitle {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.blockTitle .itemTitle {
+    padding: 0 10px 0 10px;
+    height: 36px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: lightgray;
+}
+.button button {
+    font-size: 20px;
+    padding: 10px 30px 10px 30px;
+    background-color: rgba(119, 119, 119, 0.93);
+    color: snow;
+    border: none;
+    cursor: pointer;
+}
