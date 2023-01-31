@@ -3,6 +3,8 @@
     height: 80px;
     width: 100%;
     background-color: #2B5377;
+    position: fixed;
+    top: 0;
 }
 /*margin: 0 auto; берет все пустое пространство, делит его пополам и раскидывает на две части.*/
 

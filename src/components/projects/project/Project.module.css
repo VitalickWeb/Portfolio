@@ -1,18 +1,19 @@
 .blockItemProjects {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .blockItemProjects .blockItems {
     width: 40%;
     min-height: 320px;
     background-color: silver;
     border-right: 1px solid;
+    margin-bottom: 50px;
 }
 .itemsProjects {
     width: 100%;
     height: 220px;
     background-color: rgba(0, 0, 0, 0.2);
-
 }
 .popupBlock {
     width: 100%;
@@ -57,4 +58,25 @@
     margin-left: 15px;
     height: 44px;
     background-color: rgba(192, 192, 192, 0.44);
+}
+
+
+
+
+
+
+@media (max-width: 360px) {
+    .blockItemProjects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blockItemProjects .blockItems {
+        width: 270px;
+        height: 320px;
+        margin-bottom: 50px;
+    }
+    .viewPopup {
+        width: 60px;
+    }
 }

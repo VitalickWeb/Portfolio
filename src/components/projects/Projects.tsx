@@ -7,6 +7,7 @@ export const Projects = () => {
     const [projects, setProjects] = useState<Array<ProjectType>>([
         {id: v1(), image: "", view: "View", titleProject: "Todo list", description: "description for Todo list"},
         {id: v1(), image: "", view: "View", titleProject: "Social network", description: "description for Social network"},
+        {id: v1(), image: "", view: "View", titleProject: "Clock", description: "description for clock"},
     ])
 
     return (

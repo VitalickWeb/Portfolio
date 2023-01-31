@@ -1,7 +1,7 @@
 import React from 'react';
 import st from './Header.module.css'
 import stContainer from '../common/styles/Container.module.css'
-import {Nav} from "../navigation/Nav";
+import {Nav} from "./navigation/Nav";
 
 
 export const Header = () => {

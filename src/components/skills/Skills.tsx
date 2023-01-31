@@ -8,6 +8,7 @@ export const Skills = () => {
         {id: v1(), image: "", titleSkill: "React", description: "description for react"},
         {id: v1(), image: "", titleSkill: "Type-script", description: "description for type-script"},
         {id: v1(), image: "", titleSkill: "Redux", description: "description for redux"},
+        {id: v1(), image: "", titleSkill: "Css", description: "description for css"},
     ])
 
     return (

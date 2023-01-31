@@ -1,15 +1,17 @@
 .blockItemSkills {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .blockItemSkills .blockItems {
-    width: 25%;
+    width: 200px;
     background-color: silver;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-right: 1px solid;
+    margin-bottom: 50px;
 }
 .blockItems .itemsSkills {
     display: flex;
@@ -37,4 +39,22 @@
     margin: 0;
     text-align: center;
     word-wrap: break-word;
+}
+
+
+
+
+
+@media (max-width: 360px) {
+    .blockItemSkills {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .blockItemSkills .blockItems {
+        width: 200px;
+        margin-bottom: 50px;
+    }
 }
