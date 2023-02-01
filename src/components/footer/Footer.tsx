@@ -9,10 +9,7 @@ export const Footer = () => {
                     <div className={st.blockTitle}>
                         <h2 className={st.itemTitle}>Vitaliy Bokhan</h2>
                     </div>
-                    <div className={st.blocks}>
-                        <div className={st.blockSquare}></div>
-                        <div className={st.blockSquare}></div>
-                        <div className={st.blockSquare}></div>
+                    <div className={st.blocksSocialIcons}>
                         <div className={st.blockSquare}></div>
                         <div className={st.blockSquare}></div>
                         <div className={st.blockSquare}></div>

@@ -54,7 +54,7 @@
         flex-wrap: wrap;
     }
     .blockItemSkills .blockItems {
-        width: 200px;
+        width: 90%;
         margin-bottom: 50px;
     }
 }

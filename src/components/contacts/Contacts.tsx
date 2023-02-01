@@ -11,15 +11,9 @@ export const Contacts = () => {
                     </div>
                     <div className={st.blockForm}>
                         <form action="">
-                            <div className={st.name}>
-                                <input type="text" placeholder="Name"/>
-                            </div>
-                            <div className={st.email}>
-                                <input type="email" placeholder="email"/>
-                            </div>
-                            <div className={st.placeholder}>
-                                <textarea name="text" placeholder="<textarea>" id="" cols={30} rows={10}></textarea>
-                            </div>
+                            <input type="text" placeholder="Name"/>
+                            <input type="email" placeholder="email"/>
+                            <textarea name="text" placeholder="<textarea>"></textarea>
                         </form>
                     </div>
                     <div className={st.submit}>
