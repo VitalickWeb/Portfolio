@@ -1,6 +1,6 @@
 .blockContacts {
     width: 100%;
-    min-height: 85vh;
+    min-height: 55vh;
     background-color: #678BAC;
 }
 
@@ -27,7 +27,7 @@
     align-items: center;
 }
 .blockContactsForm .blockForm {
-    width: 55%;
+    width: 400px;
     border: 1px solid;
     display: flex;
     flex-direction: column;
@@ -68,7 +68,11 @@
 }
 
 
-
+@media (max-width: 760px) {
+    .blockContactsForm .blockForm {
+        width: 70%;
+    }
+}
 
 
 @media (max-width: 360px) {

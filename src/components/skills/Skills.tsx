@@ -5,10 +5,13 @@ import {v1} from "uuid";
 
 export const Skills = () => {
     const [skills, setSkills] = useState<Array<SkillType>>([
+        {id: v1(), image: "", titleSkill: "Semantic Html", description: "description for html"},
+        {id: v1(), image: "", titleSkill: "Css/less/scss", description: "description for css"},
+        {id: v1(), image: "", titleSkill: "Storybook", description: "description for css"},
+        {id: v1(), image: "", titleSkill: "Js", description: "description for js"},
         {id: v1(), image: "", titleSkill: "React", description: "description for react"},
-        {id: v1(), image: "", titleSkill: "Type-script", description: "description for type-script"},
         {id: v1(), image: "", titleSkill: "Redux", description: "description for redux"},
-        {id: v1(), image: "", titleSkill: "Css", description: "description for css"},
+        {id: v1(), image: "", titleSkill: "Type-script", description: "description for type-script"},
     ])
 
     return (

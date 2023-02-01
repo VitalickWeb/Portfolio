@@ -5,7 +5,7 @@
 }
 
 .blockItemSkills .blockItems {
-    width: 200px;
+    width: 220px;
     background-color: silver;
     display: flex;
     flex-direction: column;

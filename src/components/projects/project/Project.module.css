@@ -4,7 +4,7 @@
     flex-wrap: wrap;
 }
 .blockItemProjects .blockItems {
-    width: 40%;
+    width: 300px;
     min-height: 320px;
     background-color: silver;
     border-right: 1px solid;
@@ -23,7 +23,7 @@
     justify-content: center;
 }
 .viewPopup {
-    width: 30%;
+    width: 60px;
     color: snow;
     font-size: 20px;
     background-color: #666666;
