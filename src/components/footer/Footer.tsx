@@ -10,10 +10,10 @@ export const Footer = () => {
                         <h2 className={st.itemTitle}>Vitaliy Bokhan</h2>
                     </div>
                     <div className={st.blocksSocialIcons}>
-                        <div className={st.blockSquare}></div>
-                        <div className={st.blockSquare}></div>
-                        <div className={st.blockSquare}></div>
-                        <div className={st.blockSquare}></div>
+                        <div className={st.socialIcon}></div>
+                        <div className={st.socialIcon}></div>
+                        <div className={st.socialIcon}></div>
+                        <div className={st.socialIcon}></div>
                     </div>
                     <div className={st.license}>
                         <p className={st.copyright}>© 2023 All rights reserved</p>

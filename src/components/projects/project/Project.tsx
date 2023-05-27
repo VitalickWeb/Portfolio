@@ -13,7 +13,9 @@ export type ProjectPropsType = {
 }
 
 export const Project = ({projects}: ProjectPropsType) => {
+
     const ProjectsRender = projects.map(p => {
+
         return (
             <div key={p.id} className={st.blockItems}>
                 <div className={st.itemsProjects}>
