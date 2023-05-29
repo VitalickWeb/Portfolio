@@ -5,6 +5,7 @@
     background-color: #2B5377;
     position: fixed;
     top: 0;
+    z-index: 2;
 }
 /*margin: 0 auto; берет все пустое пространство, делит его пополам и раскидывает на две части.*/
 

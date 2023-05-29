@@ -1,37 +1,160 @@
 /*height: 100vh; это высота любого экрана*/
 .containerMain {
-    width: 80%;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+
+    flex-direction: column;
+    align-items: center;
+
     min-height: 80vh;
     margin: 0 auto;
+}
+
+.containerGreetings {
+    width: 80%;
+    min-height: 50vh;
+    margin: 0 auto;
     padding-top: 80px;
-    border-right: 1px solid #333;
-    border-left: 1px solid #333;
+
     display: flex;
-    justify-content: space-between;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #fff;
+}
+
+.blockViewWorks {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+
+    justify-content: center;
     align-items: center;
 }
-.greetingsBlock {
-    width: 100%;
-    min-height: 80vh;
-    background-color: #5E87AC;
+
+.waveBtn {
+    position: relative;
+    width: 253px;
+    height: 84px;
+
+    border-radius: 2px;
+    border: none;
+
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.8s ease 0s;
+    -webkit-transition: all 0.8s ease 0s;
+    -moz-transition: all 0.8s ease 0s;
+    -ms-transition: all 0.8s ease 0s;
+    -o-transition: all 0.8s ease 0s;
+
+    text-decoration: none;
+    overflow: hidden;
 }
-.greetings {
+
+.btnText {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 20px;
+
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.waveBtnWaves {
+    position: absolute;
+    width: 253px;
+    height: 253px;
+    background-color: #4973ff;
+    top: 0;
+    left: 0;
+    -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.waveBtnWaves::before,
+.waveBtnWaves::after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    width: 230%;
+    height: 230%;
+
+    transform: translate3d(-50%, -96% ,0) rotate(0deg);
+    -moz-transform: translate3d(-50%, -96% ,0) rotate(0deg);
+    -ms-transform: translate3d(-50%, -96% ,0) rotate(0deg);
+    -webkit-transform: translate3d(-50%, -96% ,0) rotate(0deg);
+    -o-transform: translate3d(-50%, -96% ,0) rotate(0deg);
+}
+.waveBtnWaves::before {
+    background-color: #111;
+    border-radius: 48%;
+
+    animation: wave 5s infinite linear;
+}
+.waveBtnWaves::after {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 44%;
+
+    animation: wave 10s infinite linear;
+}
+
+.waveBtn:hover .waveBtnWaves {
+    cursor: pointer;
+}
+
+.containerMain .greetings {
+    color: #FFF;
+}
+
+.mainGreetingsBlock {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #111111;
+}
+
+.blockGreetings {
     background-color: silver;
 }
-.greetings .itemHi {
+
+.blockGreetings .itemHi {
     font-size: 20px;
     font-weight: 500;
 }
-.greetings .itemName {
+
+.blockGreetings .itemName {
+    width: 100%;
     margin-top: 0;
     margin-bottom: 0;
+    color: #FFF;
 }
-.greetings .itemPosition {
+
+.blockGreetings .itemPosition {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 18px;
     font-weight: 500;
+    color: #FFF;
 }
+
 .image {
     width: 250px;
     height: 280px;
@@ -39,10 +162,28 @@
     background-size: contain;
 }
 
+@keyframes wave {
+    0% {
+        transform: translate3d(-50%, -96% ,0) rotate(0deg) scale(1);
+        -moz-transform: translate3d(-50%, -96% ,0) rotate(0deg) scale(1);
+        -ms-transform: translate3d(-50%, -96% ,0) rotate(0deg) scale(1);
+        -webkit-transform: translate3d(-50%, -96% ,0) rotate(0deg) scale(1);
+        -o-transform: translate3d(-50%, -96% ,0) rotate(0deg) scale(1);
+    }
+    100% {
+        transform: translate3d(-50%, -96% ,0) rotate(360deg) scale(1);
+        -moz-transform: translate3d(-50%, -96% ,0) rotate(360deg) scale(1);
+        -ms-transform: translate3d(-50%, -96% ,0) rotate(360deg) scale(1);
+        -webkit-transform: translate3d(-50%, -96% ,0) rotate(360deg) scale(1);
+        -o-transform: translate3d(-50%, -96% ,0) rotate(360deg) scale(1);
+    }
+}
+
 @media (max-width: 360px) {
-    .greetings {
+    .blockGreetings {
         text-align: center;
     }
+
     .containerMain {
         min-height: 80vh;
         display: flex;
@@ -50,7 +191,8 @@
         align-items: center;
         flex-wrap: wrap;
     }
-    .greetingsBlock {
+
+    .mainGreetingsBlock {
         width: 100%;
         min-height: 96vh;
         background-color: #5E87AC;

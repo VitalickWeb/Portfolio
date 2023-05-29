@@ -17,7 +17,7 @@ export const Project = ({projects}: ProjectPropsType) => {
     const ProjectsRender = projects.map(p => {
 
         return (
-            <div key={p.id} className={st.blockItems}>
+            <div id="projects" key={p.id} className={st.blockItems}>
                 <div className={st.itemsProjects}>
                     <img src={p.image} alt="image project"/>
                     <div className={st.popupBlock}>
@@ -28,7 +28,7 @@ export const Project = ({projects}: ProjectPropsType) => {
                 </div>
                 <div className={st.titleDescBlock}>
                     <div className={st.titleBlock}>
-                        <span className={st.titleProjects}>{p.titleProject}</span>
+                        <span className={st.title}>{p.titleProject}</span>
                     </div>
                     <div className={st.descriptionProjects}>
                         <p className={st.description}>{p.description}</p>

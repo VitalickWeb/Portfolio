@@ -1,6 +1,7 @@
 import React from 'react';
 import st from './Skills.module.css'
 import {Skill} from "./skill/Skill";
+import Title from "../common/components/title/title";
 
 export type SkillsType = {
     id: string
@@ -21,9 +22,7 @@ export const Skills = ({
     return (
         <div className={st.skillsBlockCommon}>
             <div className={st.containerSkills}>
-                <div className={st.blockTitle}>
-                    <h2 className={st.itemTitle}>My skills</h2>
-                </div>
+                <Title title="Skills"/>
 
                 <Skill
                     skills={skills}

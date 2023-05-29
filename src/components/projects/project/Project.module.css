@@ -46,10 +46,10 @@
     margin-left: 15px;
     line-height: 32px;
 }
-.titleBlock .titleProjects {
-    font-size: 18px;
-    background-color: rgba(192, 192, 192, 0.44);
-}
+/*.titleBlock .title {*/
+/*    font-size: 18px;*/
+/*    background-color: rgba(192, 192, 192, 0.44);*/
+/*}*/
 .descriptionProjects .description {
     width: 88%;
 

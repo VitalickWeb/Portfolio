@@ -1,6 +1,7 @@
 import React from 'react';
 import st from './Projects.module.css'
 import {Project} from "./project/Project";
+import Title from "../common/components/title/title";
 
 export type ProjectsType = {
     id: string
@@ -20,9 +21,9 @@ export const Projects = ({projects}: ProjectsPropsType) => {
     return (
         <div className={st.blockProjects}>
             <div className={st.containerProjects}>
-                <div className={st.blockTitle}>
-                    <h2 className={st.itemTitle}>My Projects</h2>
-                </div>
+                <Title
+                    title={"Projects"}
+                />
 
                 <Project
                     projects={projects}
