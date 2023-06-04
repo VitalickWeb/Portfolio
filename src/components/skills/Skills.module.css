@@ -1,46 +1,73 @@
 .skillsBlockCommon {
     width: 100%;
-    min-height: 100vh;
-    background-color: #7D64B2;
+    padding: 90px 0 0 0;
+    background-color: #111;
+    box-sizing: border-box;
 }
+
 .containerSkills {
     width: 80%;
-    min-height: 100vh;
+    height: auto;
     margin: 0 auto;
-    border: 1px solid #333;
-    border-top: 0;
-    border-bottom: 0;
+    padding-bottom: 90px;
 
+    box-sizing: border-box;
 }
+
 .blockTitle {
     width: 100%;
     height: 100px;
     border-bottom: 1px solid;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-.containerSkills .itemTitle {
-    padding: 0 10px 0 10px;
-    height: 36px;
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: lightgray;
+    align-items: center;
+
+    padding-bottom: 50px;
 }
 
+.boxBorders_1 {
+    position: relative;
+}
 
+.borderVertical_1::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 6px;
+    height: 70px;
+    background-color: #4973ff;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, #4973ff 0%, #4973ff 25%, rgba(0, 212, 255, 1) 100%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
 
+.horizonteBorder_1::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 50%;
+    border: 1px dashed #333;
+    transform: scaleY(0.8);
+    transform-origin: top;
+}
 
 
 @media (max-width: 360px) {
     .skillsBlockCommon {
         width: 100%;
         min-height: 100vh;
-        background-color: #7D64B2;
+        background-color: #111;
     }
+
     .containerSkills {
         width: 80%;
         min-height: 100vh;
     }
+
     .blockTitle {
         height: 80px;
         border-bottom: 1px solid;

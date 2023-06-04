@@ -1,14 +1,15 @@
 import React from 'react';
-import st from "../../../projects/Projects.module.css";
+import st from "./Title.module.css";
 
 type TitlePropsType = {
     title: string
 }
 
 const Title = ({title}: TitlePropsType) => {
+
     return (
-        <div className={st.blockTitle}>
-            <h2 className={st.title}>{title}</h2>
+        <div className={st.title}>
+            <h2>{title}</h2>
         </div>
     );
 };

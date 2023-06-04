@@ -33,7 +33,9 @@ export const Skill = ({skills}: SkillPropsType) => {
 
     return (
         <div className={st.blockItemSkills}>
-            {skillsRender}
+            <div className={st.itemSkills}>
+                {skillsRender}
+            </div>
         </div>
     );
 };

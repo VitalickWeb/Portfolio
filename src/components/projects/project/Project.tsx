@@ -19,10 +19,10 @@ export const Project = ({projects}: ProjectPropsType) => {
         return (
             <div id="projects" key={p.id} className={st.blockItems}>
                 <div className={st.itemsProjects}>
-                    <img src={p.image} alt="image project"/>
+                    <img src={p.image} className={st.backgroundImage} alt="image project"/>
                     <div className={st.popupBlock}>
                         <div className={st.viewPopup}>
-                            {p.view}
+                            <a href="">{p.view}</a>
                         </div>
                     </div>
                 </div>
@@ -31,6 +31,7 @@ export const Project = ({projects}: ProjectPropsType) => {
                         <span className={st.title}>{p.titleProject}</span>
                     </div>
                     <div className={st.descriptionProjects}>
+                        <div className={st.borderTop}></div>
                         <p className={st.description}>{p.description}</p>
                     </div>
                 </div>
@@ -40,7 +41,9 @@ export const Project = ({projects}: ProjectPropsType) => {
 
     return (
         <div className={st.blockItemProjects}>
-            {ProjectsRender}
+            <div className={st.itemProjects}>
+                {ProjectsRender}
+            </div>
         </div>
     );
 };

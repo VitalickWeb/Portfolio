@@ -1,69 +1,106 @@
 .blockItemProjects {
-    display: flex;
-    justify-content: space-between;
+    min-width: 33%;
+    box-sizing: border-box;
+}
+
+.itemProjects {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
 }
-.blockItemProjects .blockItems {
-    width: 300px;
-    min-height: 320px;
-    background-color: silver;
-    border-right: 1px solid;
-    margin-bottom: 50px;
+
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
+.blockItems {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.86);
+ }
+
 .itemsProjects {
-    width: 100%;
-    height: 220px;
-    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    min-width: 33%;
+    height: 250px;
 }
+
 .popupBlock {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 172px;
+    height: 100%;
+
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.viewPopup {
-    width: 60px;
-    color: snow;
-    font-size: 20px;
-    background-color: #666666;
-    padding: 6px 0 6px 0;
-    text-align: center;
-    cursor: pointer;
-}
-.titleDescBlock .descriptionProjects .description {
-    margin-top: 0;
-    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    z-index: 2;
 }
 
+.viewPopup a {
+    width: 60px;
+    padding: 6px 12px 6px 12px;
+    border-radius: 2px;
+
+    color: snow;
+    background-color: rgba(46, 46, 46, 0.44);
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: ease-in-out 1s;
+}
+
+.viewPopup a:hover {
+    background-color: rgba(217, 217, 217, 0.44);
+    color: #3e3e5e;
+    transition: ease-in-out 1s;
+}
 .titleDescBlock {
     width: 100%;
-    height: 100px;
-    background-color: azure;
+    min-height: 120px;
+    background-color: rgba(0, 0, 0, 0.86);
 }
 
 .titleBlock {
-    margin-left: 15px;
-    line-height: 32px;
-}
-/*.titleBlock .title {*/
-/*    font-size: 18px;*/
-/*    background-color: rgba(192, 192, 192, 0.44);*/
-/*}*/
-.descriptionProjects .description {
-    width: 88%;
+    color: #F9F9F9;
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    line-height: 1.2;
 
-}
-.descriptionProjects .description {
-    margin-left: 15px;
-    height: 44px;
-    background-color: rgba(192, 192, 192, 0.44);
+    padding: 15px;
+    box-sizing: border-box;
 }
 
+.description {
+    min-width: 33%;
+    color: #8e8e8e;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    word-wrap: break-word;
+    word-break: break-all;
 
-
-
+    padding: 15px;
+}
+.descriptionProjects {
+    width: 100%;
+}
+.borderTop {
+    border-top: 1px solid rgba(249, 249, 249, 0.3);
+    margin: 0 160px 0 160px;
+}
 
 @media (max-width: 360px) {
     .blockItemProjects {
@@ -71,11 +108,13 @@
         flex-direction: column;
         align-items: center;
     }
+
     .blockItemProjects .blockItems {
         width: 100%;
         height: 320px;
         margin-bottom: 50px;
     }
+
     .viewPopup {
         width: 60px;
     }

@@ -23,6 +23,11 @@ export const Main = () => {
                         <span className={st.waveBtnWaves}></span>
                     </a>
                 </div>
+
+                <div className={st.boxBorder}>
+                    <span className={st.border}></span>
+                    <span className={st.horizonteBorder}></span>
+                </div>
             </div>
         </div>
     );

@@ -1,14 +1,13 @@
 .blockContacts {
     width: 100%;
     min-height: 55vh;
-    background-color: #678BAC;
+    background-color: #111;
 }
 
 .containerContacts {
     width: 80%;
     min-height: 85vh;
     margin: 0 auto;
-    border: 1px solid #333;
     border-top: 0;
     border-bottom: 0;
     display: flex;

@@ -1,24 +1,30 @@
 .blockProjects {
     width: 100%;
-    min-height: 100vh;
-    background-color: #5FB951;
+    height: auto;
+    background-color: #111;
+    padding: 90px 0 0 0;
 }
 
 .containerProjects {
     width: 80%;
-    height: auto;
     margin: 0 auto;
-    border: 1px solid #333;
-    border-top: 0;
-    border-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
 }
+
 .blockTitle {
     width: 100%;
     height: 100px;
     border-bottom: 1px solid;
+    padding-bottom: 30px;
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
+
 .blockProjects .itemTitle {
     padding: 0 10px 0 10px;
     height: 36px;
@@ -29,8 +35,36 @@
     background-color: lightgray;
 }
 
+.boxBorders_2 {
+    position: relative;
+    padding-top: 90px;
+}
 
+.borderVertical_2::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    width: 6px;
+    height: 70px;
+    background-color: #4973ff;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, #4973ff 0%, #4973ff 25%, rgba(0, 212, 255, 1) 100%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
 
+.horizonteBorder_2::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    border: 1px dashed #333;
+    transform: scaleY(0.8);
+    transform-origin: top;
+    z-index: 1;
+}
 
 
 @media (max-width: 360px) {

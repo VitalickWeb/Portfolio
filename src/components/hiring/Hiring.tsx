@@ -14,6 +14,11 @@ export const Hiring = () => {
                     </div>
                 </div>
             </div>
+
+            <div className={st.boxBorders}>
+                <span className={st.borderVertical}></span>
+                <span className={st.horizonteBorder}></span>
+            </div>
         </div>
     );
 };
