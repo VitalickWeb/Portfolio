@@ -1,5 +1,5 @@
 import React from 'react';
-import st from './Projects.module.css'
+import st from './Projects.module.scss'
 import {Project} from "./project/Project";
 import Title from "../common/components/title/Title";
 import Description from "../common/components/description/Description";
