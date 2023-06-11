@@ -1,0 +1,31 @@
+@import 'variables';
+
+@mixin text($textColor, $fontSize, $fontFamily, $textAlign, $lineHeight) {
+  color: $textColor;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  text-align: $textAlign;
+  line-height: $lineHeight;
+}
+
+@mixin textMain($textColor, $fontSize, $fontFamily, $fontWeight, $lineHeight) {
+  color: $textColor;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+
+@mixin textNav($textColor, $fontSize, $fontFamily, $fontWeight) {
+  color: $textColor;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+}
+
+@mixin textHead($textColor, $fontSize, $fontFamily) {
+  color: $textColor;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+}
+

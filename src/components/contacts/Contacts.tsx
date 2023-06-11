@@ -1,5 +1,5 @@
 import React from 'react';
-import st from './Contacts.module.css'
+import st from './Contacts.module.scss'
 
 export const Contacts = () => {
 
@@ -18,7 +18,7 @@ export const Contacts = () => {
                         </form>
                     </div>
                     <div className={st.submit}>
-                        <input type="submit"/>
+                        <input type="submit" value="Submit"/>
                     </div>
                 </div>
             </div>

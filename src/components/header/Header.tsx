@@ -1,5 +1,5 @@
 import React from 'react';
-import st from './Header.module.css'
+import st from './Header.module.scss'
 import stContainer from '../common/styles/Container.module.css'
 import {Nav} from "./navigation/Nav";
 

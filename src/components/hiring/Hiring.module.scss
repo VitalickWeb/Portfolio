@@ -1,0 +1,113 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.commonBlockHiring {
+  position: relative;
+  width: 100%;
+  height: 454px;
+  background-color: #111;
+  padding: 90px 0 90px 0;
+
+  .backgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+    .blockTitle {
+      position: absolute;
+      top: 90px;
+      left: 0;
+      width: 100%;
+      height: 454px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      background-color: rgba(0, 0, 0, 0.5);
+
+      .itemTitle {
+        @include textHead($textColor, 40px, $textPoppins);
+
+        height: 36px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        @media (max-width: 360px) {
+          min-height: 68px;
+          text-align: center;
+        }
+      }
+
+      .button {
+        padding-top: 48px;
+
+        button {
+          font-family: $textPoppins;
+          text-transform: capitalize;
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #4973ff;
+          color: $textColor;
+          border: none;
+          border-radius: 2px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: #3c62d8;
+          }
+
+          &:active {
+            color: #fff9;
+            background-color: #2951bd;
+          }
+
+          @media (max-width: 360px) {
+            font-size: 18px;
+            padding: 8px 26px 8px 26px;
+          }
+        }
+      }
+
+      @media (max-width: 360px) {
+        height: 140px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      min-height: 36vh;
+    }
+
+  .boxBorders {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 6px;
+      height: 70px;
+      background-color: #4973ff;
+      background: rgb(2, 0, 36);
+      background: linear-gradient(180deg, #4973ff 0%, #4973ff 25%, rgba(0, 212, 255, 1) 100%);
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 50%;
+      border: 1px dashed #333;
+      transform: scaleY(0.8);
+      transform-origin: top;
+    }
+  }
+}
+
+

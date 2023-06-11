@@ -1,0 +1,20 @@
+@import '../common/styles/sass/variables';
+
+.blockHeader {
+    height: 80px;
+    width: 100%;
+    background-color: $bgSecondColor;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+
+    .title {
+        color: $textColor;
+        font-family: $textPoppins;
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0;
+    }
+}
+
+

@@ -1,5 +1,5 @@
 import React from 'react';
-import st from './Project.module.css'
+import st from './Project.module.scss'
 
 export type ProjectType = {
     id: string

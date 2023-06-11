@@ -1,0 +1,253 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+/*height: 100vh; это высота любого экрана*/
+.mainGreetingsBlock {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $bgColor;
+
+  .containerMain {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0 auto;
+
+    .containerGreetings {
+      width: 80%;
+      min-height: 64vh;
+      margin: 0 auto;
+      padding-top: 80px;
+
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+
+      justify-content: space-evenly;
+      align-items: center;
+
+      .blockGreetings {
+        max-width: 70%;
+
+        .greetings {
+          @include text($textColor, 32px, $textPoppins, 400, 1.2);
+        }
+
+        .itemName {
+          max-width: 600px;
+
+          color: $textColor;
+          font-family: Poppins, sans-serif;
+          font-size: 80px;
+          line-height: 1.2;
+          word-wrap: break-word;
+
+          margin-top: 0;
+          margin-bottom: 0;
+
+        }
+
+        .itemPosition {
+          font-size: 21px;
+          margin-top: 0;
+          margin-bottom: 0;
+          font-weight: 500;
+          color: #dee3e4;
+          line-height: 2.4;
+        }
+
+        @media (max-width: 360px) {
+          text-align: center;
+        }
+      }
+
+      .image {
+        width: 250px;
+        height: 280px;
+        background-color: silver;
+        background-size: contain;
+      }
+    }
+
+    .blockViewWorks {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+
+      justify-content: center;
+      align-items: center;
+
+      .waveBtn {
+        position: relative;
+        width: 253px;
+        height: 64px;
+
+        border-radius: 2px;
+        border: none;
+
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+
+        justify-content: center;
+        align-items: center;
+
+        transition: all 0.8s ease 0s;
+        -webkit-transition: all 0.8s ease 0s;
+        -moz-transition: all 0.8s ease 0s;
+        -ms-transition: all 0.8s ease 0s;
+        -o-transition: all 0.8s ease 0s;
+
+        text-decoration: none;
+        overflow: hidden;
+
+        .btnText {
+          color: #FFF;
+          font-weight: 500;
+          font-size: 20px;
+
+          text-transform: capitalize;
+          letter-spacing: 1px;
+          z-index: 1;
+        }
+
+        .waveBtnWaves {
+          position: absolute;
+          width: 253px;
+          height: 253px;
+          background-color: $primaryColor;
+
+          top: 0;
+          left: 0;
+          -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+
+          transition: ease-in-out 1s;
+          -moz-transition: ease-in-out 1s;
+          -ms-transition: ease-in-out 1s;
+          -webkit-transition: ease-in-out 1s;
+          -o-transform: ease-in-out 1s;
+        }
+
+        .waveBtnWaves::before,
+        .waveBtnWaves::after {
+          content: '';
+          position: absolute;
+          top: 15px;
+          left: 50%;
+          width: 230%;
+          height: 230%;
+
+          transform: translate3d(-50%, -96%, 0) rotate(0deg);
+          -moz-transform: translate3d(-50%, -96%, 0) rotate(0deg);
+          -ms-transform: translate3d(-50%, -96%, 0) rotate(0deg);
+          -webkit-transform: translate3d(-50%, -96%, 0) rotate(0deg);
+          -o-transform: translate3d(-50%, -96%, 0) rotate(0deg);
+        }
+
+        .waveBtnWaves::before {
+          background-color: #222;
+          border-radius: 48%;
+
+          animation: wave 5s infinite linear;
+        }
+
+        .waveBtnWaves::after {
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 44%;
+
+          animation: wave 10s infinite linear;
+        }
+
+        &:hover {
+          .waveBtnWaves {
+            cursor: pointer;
+            top: -88%;
+
+            transition: ease-in-out 1s;
+            -moz-transition: ease-in-out 1s;
+            -ms-transition: ease-in-out 1s;
+            -webkit-transition: ease-in-out 1s;
+            -o-transform: ease-in-out 1s;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 360px) {
+      min-height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 360px) {
+    width: 100%;
+    min-height: 96vh;
+    background-color: $bgColor;
+  }
+}
+
+
+.BoxBorder {
+  position: relative;
+}
+
+.border::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 6px;
+  height: 70px;
+  background-color: $primaryColor;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(180deg, #4973ff 0%, #4973ff 25%, rgba(0, 212, 255, 1) 100%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.horizonteBorder::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 50%;
+  border: 1px dashed #333;
+  transform: scaleY(0.8);
+  transform-origin: top;
+}
+
+
+@keyframes wave {
+  0% {
+    transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+    -moz-transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+    -ms-transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+    -webkit-transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+    -o-transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+  }
+  100% {
+    transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+    -moz-transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+    -ms-transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+    -webkit-transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+    -o-transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+  }
+}
+

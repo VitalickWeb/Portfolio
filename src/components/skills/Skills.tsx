@@ -1,5 +1,5 @@
 import React from 'react';
-import st from './Skills.module.css'
+import st from './Skills.module.scss'
 import {Skill} from "./skill/Skill";
 import Title from "../common/components/title/Title";
 import Description from "../common/components/description/Description";
@@ -8,7 +8,6 @@ export type SkillsType = {
     id: string
     image: string
     titleSkill: string
-    description: string
  }
 
 export type SkillsPropsType ={
