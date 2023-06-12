@@ -1,13 +1,15 @@
+@import '../common/styles/sass/variables';
+
 .blockFooter {
   width: 100%;
-  background-color: #fff;
+  background-color: #232628;
 
   .containerFooter {
     width: 80%;
     height: 280px;
     margin: 0 auto;
-    border-top: 0;
-    border-bottom: 0;
+    //border-top: 0;
+    //border-bottom: 0;
     display: flex;
     align-items: center;
 
@@ -26,24 +28,79 @@
         align-items: center;
 
         .itemTitle {
-          padding: 0 10px 0 10px;
+          color: $textColor;
+          font-family: $textPoppins;
+
           height: 36px;
-          margin-top: 0;
-          margin-bottom: 0;
-          background-color: lightgray;
+
+          margin: 0;
+          padding: 0 10px 0 10px;
         }
       }
 
       .blocksSocialIcons {
         width: 278px;
+
         display: flex;
         justify-content: space-between;
-        border: 1px solid;
 
-        .socialIcon {
+        a.socialIcon {
+          background: linear-gradient(180deg, #4973ff 0%, #4973ff 25%, #00d4ff 100%);
+          border-radius: 50%;
+          font-size: 28px;
+
           width: 40px;
           height: 40px;
-          background-color: #45637E;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          box-sizing: border-box;
+        }
+
+        .socialIcon span.telegramIcon {
+          color: $textColor;
+          font-size: 28px;
+          transition: 0.1s ease-in-out;
+        }
+
+        .socialIcon span.linkedinIcon {
+          color: $textColor;
+          font-size: 28px;
+          transition: 0.1s ease-in-out;
+        }
+
+        .socialIcon span.githubIcon {
+          color: $textColor;
+          font-size: 28px;
+          transition: 0.1s ease-in-out;
+        }
+
+        .socialIcon span.envelopeIcon {
+          color: $textColor;
+          font-size: 28px;
+          transition: 0.1s ease-in-out;
+        }
+
+        .socialIcon .telegramIcon:hover {
+          color: #666666;
+          transition: 0.1s ease-in-out;
+        }
+
+        .socialIcon .linkedinIcon:hover {
+          color: #666666;
+          transition: 0.1s ease-in-out;
+        }
+
+        .socialIcon .githubIcon:hover  {
+          color: #666666;
+          transition: 0.1s ease-in-out;
+        }
+
+        .socialIcon .envelopeIcon:hover  {
+          color: #666666;
+          transition: 0.1s ease-in-out;
         }
 
         @media (max-width: 360px) {
@@ -53,10 +110,11 @@
 
       .license {
         .copyright {
-          margin-top: 0;
-          margin-bottom: 0;
-          background-color: lightgray;
+          color: $textColor;
+          font-family: $textPoppins;
           font-weight: 500;
+
+          margin: 0;
         }
       }
     }

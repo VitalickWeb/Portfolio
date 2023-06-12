@@ -12,9 +12,9 @@ export const Contacts = () => {
                     </div>
                     <div className={st.blockForm}>
                         <form action="">
-                            <input type="text" placeholder="Name"/>
+                            <input type="text" placeholder="name"/>
                             <input type="email" placeholder="email"/>
-                            <textarea name="text" placeholder="<textarea>"></textarea>
+                            <textarea name="text" placeholder="textarea"></textarea>
                         </form>
                     </div>
                     <div className={st.submit}>

@@ -4,12 +4,11 @@
 .blockContacts {
   width: 100%;
   height: 550px;
-  //background-color: $bgColor;
+  background-color: $bgColor;
 
-  -webkit-box-shadow: 0px 20px 34px 9px rgba(17, 17, 17, 0.2);
-  -moz-box-shadow: 0px 20px 34px 9px rgba(17, 17, 17, 0.2);
-  box-shadow: 0px 20px 34px 9px rgba(17, 17, 17, 0.2);
-  z-index: 2;
+  -webkit-box-shadow: 0px 20px 34px 9px rgb(17, 17, 17);
+  -moz-box-shadow: 0px 20px 34px 9px rgb(17, 17, 17);
+  box-shadow: 0px 20px 34px 9px rgb(17, 17, 17);
 
   .containerContacts {
     width: 80%;
@@ -21,7 +20,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 90px 0 90px 0;
+    padding: 90px 0 40px 0;
 
     .blockContactsForm {
       width: 100%;
@@ -33,6 +32,8 @@
       align-items: center;
 
       .blockTitle {
+        margin-bottom: 10px;
+
         .itemTitle {
           @include textHead($textColor, 36px, $textPoppins);
           color: $textColor;
@@ -40,7 +41,6 @@
           margin-top: 0;
           margin-bottom: 0;
           padding: 0 10px 0 10px;
-
         }
       }
 
@@ -53,28 +53,59 @@
 
         input[type='text'],
         input[type='email'] {
+          color: #8e8e8e;
+          font-size: 18px;
           width: 100%;
-          padding: 5px;
-          box-sizing: border-box;
+
           outline: none;
-          margin-bottom: 10px;
-          background-color: #333;
-          color: $textColor;
           border: none;
-          border-radius: 4px;
+          background-color: #111;
+
+          border-bottom: 1px solid $textColor;
+          padding: 24px 5px 24px 5px;
+          transition: border-bottom-color 0.3s ease;
+
+          z-index: 2;
+          &:focus {
+            color: #8e8e8e;
+            background-color: #222;
+            border-bottom-color: $primaryColor;
+            animation: slideRight 0.5s ease;
+            outline: none;
+            -webkit-appearance: none;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+          }
         }
 
         textarea {
-          outline: none;
-          padding: 5px 0 0 5px;
-          border: none;
-          font-size: 14px;
+          color: #8e8e8e;
+          font-size: 18px;
           width: 100%;
-          height: 130px;
-          box-sizing: border-box;
-          background-color: #333;
-          color: #fff;
-          border-radius: 4px;
+
+          outline: none;
+          border: none;
+          background-color: #111;
+
+          border-bottom: 1px solid $textColor;
+          padding: 5px 5px 48px 5px;
+          transition: border-bottom-color 0.3s ease;
+
+          &:focus {
+            background-color: #222;
+            border-bottom-color: $primaryColor;
+            animation: slideRight 0.5s ease;
+          }
+        }
+
+        @keyframes slideRight {
+          0% {
+            width: 0;//начало анимации
+          }
+          100% {
+            width: 100%;//конец анимации
+          }
         }
 
         @media (max-width: 760px) {
@@ -83,6 +114,25 @@
 
         @media (max-width: 360px) {
           width: 100%;
+        }
+
+        input[type='text']:-webkit-autofill,
+        input[type='text']:-webkit-autofill:hover,
+        input[type='text']:-webkit-autofill:focus,
+        input[type='email']:-webkit-autofill,
+        input[type='email']:-webkit-autofill:hover,
+        input[type='email']:-webkit-autofill:focus,
+        textarea:-webkit-autofill,
+        textarea:-webkit-autofill:hover,
+        textarea:-webkit-autofill:focus,
+        select:-webkit-autofill,
+        select:-webkit-autofill:hover,
+        select:-webkit-autofill:focus {
+          border-bottom-color: $primaryColor;
+          -webkit-text-fill-color: #8e8e8e;
+          -webkit-box-shadow: 0 0 0 1000px #222 inset;
+          transition: background-color 5000s ease-in-out 0s;
+          background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%);
         }
       }
 
