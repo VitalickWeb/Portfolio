@@ -6,10 +6,6 @@
   height: 550px;
   background-color: $bgColor;
 
-  -webkit-box-shadow: 0px 20px 34px 9px rgb(17, 17, 17);
-  -moz-box-shadow: 0px 20px 34px 9px rgb(17, 17, 17);
-  box-shadow: 0px 20px 34px 9px rgb(17, 17, 17);
-
   .containerContacts {
     width: 80%;
     margin: 0 auto;
@@ -93,7 +89,7 @@
           transition: border-bottom-color 0.3s ease;
 
           &:focus {
-            background-color: #222;
+            background-color: #232628;
             border-bottom-color: $primaryColor;
             animation: slideRight 0.5s ease;
           }
@@ -130,7 +126,7 @@
         select:-webkit-autofill:focus {
           border-bottom-color: $primaryColor;
           -webkit-text-fill-color: #8e8e8e;
-          -webkit-box-shadow: 0 0 0 1000px #222 inset;
+          -webkit-box-shadow: 0 0 0 1000px #232628 inset;
           transition: background-color 5000s ease-in-out 0s;
           background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%);
         }

@@ -7,6 +7,7 @@ import {Projects} from "./components/projects/Projects";
 import {Hiring} from "./components/hiring/Hiring";
 import {Contacts} from "./components/contacts/Contacts";
 import {Footer} from "./components/footer/Footer";
+import {Nav, NavType} from "./components/header/navigation/Nav";
 import {SkillType} from "./components/skills/skill/Skill";
 import {v1} from "uuid";
 
@@ -27,9 +28,17 @@ import sBookIconImage from './assets/images/skills/stroryBook-icon.jpeg'
 import materialIconImage from './assets/images/skills/logo-material-ui.jpeg'
 
 
+
 function App() {
+    const [navigation, setNavigation] = useState<NavType[]>([
+        {id: v1(), title: "main"},
+        {id: v1(), title: "skills"},
+        {id: v1(), title: "projects"},
+        {id: v1(), title: "contacts"},
+    ])
+
     const [skills, setSkills] = useState<SkillType[]>([
-        {id: v1(), image: `${htmlIconImage}`, titleSkill: "html"},
+        {id: v1(), image:  `${htmlIconImage}`, titleSkill: "html"},
         {id: v1(), image: `${cssIconImage}`, titleSkill: "css/less/sass"},
         {id: v1(), image: `${jsIconImage}`, titleSkill: "JS"},
         {id: v1(), image: `${tsIconImage}`, titleSkill: "TS"},
@@ -50,7 +59,7 @@ function App() {
 // console.log(projects.map(p => p.image))
     return (
         <div className="App">
-            <Header />
+            <Header navigation={navigation}/>
             <Main />
 
             <Skills

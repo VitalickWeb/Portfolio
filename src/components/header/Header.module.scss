@@ -1,19 +1,22 @@
 @import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .blockHeader {
-    height: 80px;
     width: 100%;
+    height: 80px;
     background-color: $bgSecondColor;
     position: fixed;
     top: 0;
     z-index: 3;
 
     .title {
-        color: $textColor;
-        font-family: $textPoppins;
-        font-size: 24px;
-        font-weight: 600;
+        @include textNav($textColor, 24px, $textPoppins, 600);
         margin: 0;
+    }
+
+    @media (max-width: 360px) {
+        width: 79%;
+
     }
 }
 
